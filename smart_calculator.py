@@ -91,7 +91,6 @@ print('--------------' + response[1] + '--------------------')
 
 
 while True:
-    # text = input('enter your queries: ')
     text = str(input("enter your query: "))
     operants = []
     action = 0
@@ -105,12 +104,6 @@ while True:
                     r = operations[word.upper()](l[action-1], l[action])
                 elif action > 1:
                     r = operations[word.upper()](r, l[action])
-                # if action == 1:
-                #     print(action)
-                #     r = operations[word.upper()](l[0], l[1])
-                # elif action == 2:
-                #     print(action)
-                #     r = operations[word.upper()](r, l[action])
                 print(f'answer to {word}', r)
             except:
                 print("something went wrong")
